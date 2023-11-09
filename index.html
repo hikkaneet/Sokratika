@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Sokratika" content="Тестовое задание">
+    <title>Sokratika</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/RobotoSlab-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Inter-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="page-container">
+
+      <header class="main-header">
+        <div class="main-header__wrapper">
+          <a class="main-header__logo" href="index.html" aria-label="Логотип. Перейти на главную.">
+            <svg width="208" height="40">
+              <use xlink:href="./img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <main class="main-container">
+        <h1 class="visually-hidden">Первая страница</h1>
+        <section class="content">
+          <div class="content__image-wrapper">
+            <svg width="658" height="658">
+              <use xlink:href="./img/sprite.svg#illustration"></use>
+            </svg>
+          </div>
+          <div class="content__form-wrapper">
+            <p class="content__title">01 Заполни форму</p>
+            <form class="user-form" action="#" method="post">
+              <div class="user-form__info-wrapper">
+                <label class="user-form__label user-form__label--lesson">
+                  <span class="user-form__label-text">Тема урока</span>
+                  <input class="user-form__input" type="text" name="lesson" required maxlength="256" placeholder="Напиши что-то конкретное">
+                  <div class="user-form__input-icon user-form__input-icon--hidden">
+                    <svg width="16" height="16">
+                      <use xlink:href="./img/sprite.svg#close"></use>
+                    </svg>
+                  </div>
+                </label>
+                <label class="user-form__label user-form__label--class" id="class">
+                  <span class="user-form__label-text">Класс</span>
+                  <input class="user-form__input" type="text" name="class" required maxlength="1">
+                  <svg width="16" height="9">
+                    <use xlink:href="./img/sprite.svg#arrow-down"></use>
+                  </svg>
+                  <ul class="user-form__select-list user-form__select-list--hidden">
+                    <li class="user-form__select-item" data-value="1">
+                      <span class="user-form__select-text">1</span>
+                      <div class="user-form__select-icon">
+                        <svg width="24" height="24">
+                          <use xlink:href="./img/sprite.svg#checked"></use>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="user-form__select-item" data-value="2">
+                      <span class="user-form__select-text">2</span>
+                      <div class="user-form__select-icon">
+                        <svg width="24" height="24">
+                          <use xlink:href="./img/sprite.svg#checked"></use>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="user-form__select-item" data-value="3">
+                      <span class="user-form__select-text">3</span>
+                      <div class="user-form__select-icon">
+                        <svg width="24" height="24">
+                          <use xlink:href="./img/sprite.svg#checked"></use>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="user-form__select-item" data-value="4">
+                      <span class="user-form__select-text">4</span>
+                      <div class="user-form__select-icon">
+                        <svg width="24" height="24">
+                          <use xlink:href="./img/sprite.svg#checked"></use>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="user-form__select-item" data-value="5">
+                      <span class="user-form__select-text">5</span>
+                      <div class="user-form__select-icon">
+                        <svg width="24" height="24">
+                          <use xlink:href="./img/sprite.svg#checked"></use>
+                        </svg>
+                      </div>
+                    </li>
+                  </ul>
+                </label>
+              </div>
+              <div class="user-form__tag-wrapper">
+                <ul class="user-form__tag-list user-form__tag-list--hiiden">
+                  <li class="user-form__tag-item">Генетика</li>
+                  <li class="user-form__tag-item">Анатомия человека</li>
+                  <li class="user-form__tag-item">Вулканы</li>
+                  <li class="user-form__tag-item">Зимние виды спорта</li>
+                  <li class="user-form__tag-item">Индийская культура</li>
+                  <li class="user-form__tag-item user-form__tag-item--hidden">Радуга</li>
+                  <li class="user-form__tag-item user-form__tag-item--hidden">Пеший туризм</li>
+                  <li class="user-form__tag-item user-form__tag-item--hidden">Философия</li>
+                  <li class="user-form__tag-item user-form__tag-item--hidden">Вселенная</li>
+                  <li class="user-form__tag-item user-form__tag-item--hidden">Здоровые привычки</li>
+                  <li class="user-form__tag-item user-form__tag-item--hidden">Бабочки</li>
+                  <li class="user-form__tag-item user-form__tag-item--hidden">Белые медведи</li>
+                  <li class="user-form__tag-item user-form__tag-item--hidden">Экономика</li>
+                  <li class="user-form__tag-item user-form__tag-item--hidden">Финансовая грамотность</li>
+                  <li class="user-form__tag-item user-form__tag-item--hidden">Фотосинтез</li>
+                </ul>
+                <button class="user-form__more-button" id="more-tags">
+                  <svg width="12" height="12">
+                    <use xlink:href="./img/sprite.svg#plus"></use>
+                  </svg>
+                  <span>Показать больше вариантов</span>
+                </button>
+              </div>
+              <div class="user-form__text-wrapper">
+                <label class="user-form__label" id="textarea">
+                  <span class="user-form__label-text">Ваше сообщение</span>
+                  <textarea class="user-form__textarea" name="user-text" placeholder="Напиши свою учебную цель"></textarea>
+                </label>
+                <div class="user-form__text-info">
+                  <span class="user-form__textarea-message user-form__textarea-message--hidden">Enter your name</span>
+                  <span class="user-form__textarea-counter">0 / 200</span>
+                </div>
+              </div>
+              <div class="user-form__control-wrapper">
+                <button class="user-form__control-button">Назад</button>
+                <button class="user-form__control-button user-form__control-button--next" disabled>Следующий шаг</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+      </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
